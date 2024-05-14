@@ -13,11 +13,16 @@ body{
 
 header{
     background-color: #005689;
-    padding: 1rem;
-   
+    padding-bottom: 10px;
+    height: auto;
+    padding: 2rem;
     font-size: 1.5rem;
     color: white;
     width: 100%;
+}
+
+header:hover{
+    background: linear-gradient(#00F260,  #0575E6);
 }
 
 .titulo{
@@ -56,8 +61,8 @@ ul li a:hover{
 }
 
 .guia-6{
-    border: 2px solid #007cb9;
-    
+   
+  
     color: black;
     width: 90%;
     display: flex;
@@ -65,10 +70,15 @@ ul li a:hover{
     justify-content: center;
     align-items: center;
    padding: 20px;
-   margin-top: 20px;
+   margin-top: 100px;
    margin-left: auto;
    margin-right: auto;
    border-radius: 20px;
+   
+}
+
+.guia-6:hover{
+    border: 2px solid #007cb9;
 }
 
 .guia-6 img{
@@ -91,7 +101,7 @@ table ul{
 }
 
 .laptop-tablet, .impresoras{
-    border: 2px solid #007cb9;
+  
     border-radius: 20px;
     padding: 50px;
     width: 90%;
@@ -99,6 +109,18 @@ table ul{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+.laptop-tablet:hover{
+    border: 2px solid #007cb9;
+}
+
+.impresoras:hover{
+    border: 2px solid #007cb9;
+   
+}
+
+.impresoras img{
+    width: 300px;
 }
 
 
