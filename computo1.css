@@ -1,0 +1,61 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar{
+    background-color:#00bbf0;
+    padding: 1rem;
+}
+
+main{
+    background-color: #00204a;
+    padding: 1.5rem;
+}
+.nav-item{
+    
+    margin: 2px;
+}
+
+
+
+.navbar-collapse{
+    align-items: center;
+    justify-content:space-around;
+}
+
+.perfil-profesional{
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 15px;
+}
+.guia1, .guia2, .guia3, .guia4, .guia5{
+    width: 80%;
+    background-color: #005792;
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+}
+
+footer{
+    background-color:#00bbf0;
+    padding: 3rem;
+    text-align: center;
+    
+}
+
+
+@media  screen and (max-width: 767px) {
+    .navbar-brand{
+        display: none;
+    }
+    
+}
+
