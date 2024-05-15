@@ -25,6 +25,7 @@ header:hover{
     background: linear-gradient(#00F260,  #0575E6);
 }
 
+<<<<<<< HEAD
 .enlace-proyectos{
     display: flex;
     align-items: center;
@@ -37,6 +38,8 @@ header:hover{
     padding: 1rem;
 }
 
+=======
+>>>>>>> e95390e261e4d373416be00dda150102f653371e
 .proyectos{
     font-size: 1.5rem;
     cursor: pointer;
