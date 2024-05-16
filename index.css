@@ -25,26 +25,22 @@ header:hover{
     background: linear-gradient(#00F260,  #0575E6);
 }
 
-<<<<<<< HEAD
-.enlace-proyectos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.enlace-proyectos h3{
-    margin: 10px;
-    padding: 1rem;
-}
-
-=======
->>>>>>> e95390e261e4d373416be00dda150102f653371e
 .proyectos{
+
     font-size: 1.5rem;
     cursor: pointer;
 }
 
+.enlace-proyectos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.enlace-proyectos h3{
+    margin: 40px;
+}
 .proyectos a{
     color: white;
     text-decoration: none;
