@@ -5,20 +5,26 @@
     font-family: sans-serif;
 }
 
-.head{
 
+body{
+    background-image: url('https://icorp.com.mx/wp-content/uploads/2018/06/¿Que-es-Infraestructura-de-TI-y-cuales-son-sus-componentes-scaled.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.head{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 3rem;
+
+    padding-top: 1rem;
 }
+
 header{
     background-color: blue;
-   
     text-align: center;
     color: white;
-    padding: 1rem;
-   
+    height: auto;
 
 }
 header:hover{
@@ -28,7 +34,7 @@ header:hover{
 .proyectos{
 
     font-size: 1.5rem;
-    cursor: pointer;
+   
 }
 
 .enlace-proyectos{
@@ -44,15 +50,20 @@ header:hover{
 .proyectos a{
     color: white;
     text-decoration: none;
+    animation: agranda_texto  4s ease-in-out;
 }
-.proyectos:hover{
+.proyectos a:hover{
     text-decoration: underline;
 }
 
+.bienvenida{
+    animation: rotacion 3s ease-in-out;
+}
 .mi-imagen{
     width: 150px;
-    border-radius: 50%;
+    border-radius: 10%;
     transition: transform 0.6s ease;
+    animation: rotacion 3s ease-in-out;
 }
 
 .mi-imagen:hover{
@@ -72,10 +83,35 @@ header:hover{
     font-size: 1.6rem;
     border-radius: 50px;
     margin-bottom: 100px;
+    background-color: white;
+    opacity: 0.8;
+    animation: rotacion 3s  ease-in-out;
+  
   
 
 }
 
+@keyframes rotacion{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
+@keyframes agranda_texto {
+    from{
+        font-size: 10px;
+    }
+
+    to{
+        font-size: 1.17em;
+    }
+    
+}
 .datos p{
     margin-top: 30px;
 }
