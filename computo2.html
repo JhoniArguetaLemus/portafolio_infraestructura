@@ -9,6 +9,20 @@
 
     <link rel="stylesheet" href="styles.css" />
     <title>Portafolio</title>
+
+    <style>
+      body{
+        font-size: 1.2rem;
+      }
+
+      .segundo_router{
+        width: 90%;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+   
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -212,6 +226,90 @@
       <img src="imagenes/router11.png" alt="" />
       <img src="imagenes/router12.png" alt="" />
       <img src="imagenes/router13.png" alt="" />
+
+      <section class="segundo_router">
+
+        <h1>Cómo Conectar Dos Routers</h1>
+        <p>Conectar dos routers puede ser útil para expandir la cobertura de tu red Wi-Fi o para crear una red separada dentro de tu hogar u oficina. Aquí tienes dos métodos comunes para hacerlo:</p>
+    
+        <h2>Método 1: Conexión en Cadena (Modo Extensor)</h2>
+        <img src="https://grupocartronic.com/wp-content/uploads/2023/06/LRE-104-3.png.pagespeed.ce.3h1Ut4Izae.png" alt="" width="400">
+        <ol>
+            <li>
+                <strong>Configurar el Segundo Router</strong>
+                <ul>
+                    <li><strong>Desactivar DHCP:</strong> Para evitar conflictos de direcciones IP, desactiva el servidor DHCP en el segundo router.</li>
+                    <li><strong>Asignar IP Estática:</strong> Asigna una dirección IP estática al segundo router que esté en el mismo rango que el primer router, pero fuera del rango DHCP del primer router (por ejemplo, si el primer router tiene el rango DHCP de <code>192.168.1.100 a 192.168.1.200</code>, asigna una IP como <code>192.168.1.2</code> al segundo router).</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Conectar los Routers</strong>
+                <ul>
+                    <li>Conecta un cable Ethernet desde un puerto LAN (no el puerto WAN) del primer router a un puerto LAN del segundo router. De esta manera, ambos routers estarán en la misma red y los dispositivos podrán comunicarse entre ellos.</li>
+                </ul>
+            </li>
+        </ol>
+    
+        <h2>Método 2: Conexión en Modo Bridge (Puente)</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHOek8jFSIVDzVxJxehB4etXGPs5NlrYL2vpSTR-A7nA&s" alt="" width="300">
+        <ol>
+            <li>
+                <strong>Configurar el Segundo Router en Modo Bridge</strong>
+                <ul>
+                    <li>Muchos routers modernos tienen una opción para configurar el dispositivo en modo "bridge" o "puente". Esta opción puede encontrarse en la configuración avanzada o en la configuración de red inalámbrica.</li>
+                    <li>En el modo bridge, el segundo router actúa como un extensor de señal del primero, sin asignar nuevas direcciones IP.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Conectar los Routers</strong>
+                <ul>
+                    <li>Similar al primer método, conecta un cable Ethernet desde un puerto LAN del primer router a un puerto LAN del segundo router. En este modo, el segundo router simplemente amplificará la señal del primero sin funcionar como un router independiente.</li>
+                </ul>
+            </li>
+        </ol>
+    
+        <h2>Consideraciones Adicionales</h2>
+        <ul>
+            <li><strong>Nombres de Red (SSID):</strong> Puedes usar el mismo SSID y contraseña para ambos routers para que los dispositivos se conecten automáticamente al más cercano, o puedes usar diferentes SSID si prefieres distinguir entre las dos áreas de cobertura.</li>
+            <li><strong>Canales Wi-Fi:</strong> Configura diferentes canales Wi-Fi para cada router (si están en la misma banda) para minimizar la interferencia.</li>
+        </ul>
+    
+        <h2>Pasos Detallados para la Configuración</h2>
+        <ol>
+            <li>
+                <strong>Accede a la Configuración del Router</strong>
+                <ul>
+                    <li>Conecta tu computadora a cada router individualmente (uno a la vez) usando un cable Ethernet o Wi-Fi.</li>
+                    <li>Abre un navegador web y entra a la dirección IP del router (comúnmente <code>192.168.1.1</code> o <code>192.168.0.1</code>, consulta el manual del router para la dirección exacta).</li>
+                    <li>Inicia sesión con el nombre de usuario y contraseña (comúnmente "admin" y "password", a menos que se haya cambiado).</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Desactivar DHCP en el Segundo Router</strong>
+                <ul>
+                    <li>Navega hasta la configuración de red LAN y busca la opción para desactivar el servidor DHCP.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Asignar IP Estática al Segundo Router</strong>
+                <ul>
+                    <li>En la configuración de red LAN, asigna una dirección IP estática dentro del mismo rango de la red principal pero fuera del rango DHCP del primer router.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Configurar el Modo Bridge (si es aplicable)</strong>
+                <ul>
+                    <li>Navega a la configuración de red inalámbrica y busca la opción para habilitar el modo bridge o repetidor.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Conexión Física</strong>
+                <ul>
+                    <li>Usa un cable Ethernet para conectar un puerto LAN del primer router a un puerto LAN del segundo router.</li>
+                </ul>
+            </li>
+        </ol>
+      </section>
     </section>
 
     <section class="laptop-tablet" id="laptop-tablet">
@@ -222,7 +320,7 @@
         dispositivo por categoría: Laptop, Tablet o Teléfono Celular Smart,
         detallando sus características, especificaciones y precio de venta.
       </p>
-      <table>
+      <table class="table ">
         <thead>
           <tr>
             <th>Dispositivo</th>
@@ -462,6 +560,69 @@
           </tr>
         </tbody>
       </table>
+
+      <h2>Dispositivos para cada tipo de persona</h2>
+      <table class="table table-hover ">
+        <thead>
+            <tr>
+                <th scope="col">Dispositivo</th>
+                <th scope="col">Imagen</th>
+                <th scope="col">Características</th>
+                <th scope="col">Tipo de cliente</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Laptop HP</td>
+                <td><img src="https://buketomnisportpweb.s3.us-east-2.amazonaws.com/products-images/TWD8exawktQfDy4sSF3KBpN8jH0yR53FDlyPJQq0.png" alt="Laptop HP" class="device-img" width="500"></td>
+                <td>Pantalla táctil, Procesador Intel i7, 16GB RAM</td>
+                <td>Ingenieros</td>
+            </tr>
+            <tr>
+                <td>iPhone 13</td>
+                <td><img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-13-finish-unselect-gallery-1-202207_GEO_US_FMT_WHH?wid=1280&hei=492&fmt=p-jpg&qlt=80&.v=WGQwVDZoTWdLODlMWERUbVY5M013dFgrSXpWVEhWaW9YTGlWRHFoSHU0L0s5ZkVzdU4zZFQ0UmxIUnZzSytodzdXUFRJMDZFNW93MWh0MmJseHczZUNzRVdVYUZMK2pnb0pYa1BITFFSbEwxcjBVRyswWG14bEI4WVZBcUIybEZNSStNMUJpVDhQZGtWN3lTK01mTjBnPT0=&traceId=1" alt="iPhone 13" class="device-img" width="500"></td>
+                <td>Cámara de 12MP, Pantalla OLED, 5G</td>
+                <td>Fotógrafos, Usuarios avanzados</td>
+            </tr>
+            <tr>
+                <td>iPad Pro</td>
+                <td><img src="https://siman.vtexassets.com/arquivos/ids/1574395-800-800?v=637624941524700000&width=800&height=800&aspect=true" alt="iPad Pro" class="device-img" width="500"></td>
+                <td>Pantalla Retina, Soporte para Apple Pencil, 256GB</td>
+                <td>Artistas, Diseñadores gráficos</td>
+            </tr>
+          
+            <tr>
+              <td>Dell XPS 13</td>
+              <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1FxEnLDdQAyFVSnvZtmbda1po4iM90omp9Ep0o4Ulqg&s" alt="Dell XPS 13" class="device-img" width="500"></td>
+              <td>Pantalla InfinityEdge, Intel i7, 16GB RAM</td>
+              <td>Profesionales, Ejecutivos</td>
+          </tr>
+
+          <tr>
+            <td>Samsung Galaxy S21</td>
+            <td><img src="https://m.media-amazon.com/images/I/61m1Dot5KCL._AC_SL1000_.jpg" alt="Samsung Galaxy S21" class="device-img" width="500"></td>
+            <td>Triple cámara, Pantalla AMOLED, 5G</td>
+            <td>Usuarios avanzados, Entusiastas de Android</td>
+        </tr>
+
+        <tr>
+          <td>Samsung Galaxy Tab S7</td>
+          <td><img src="https://www.manual.sv/thumbs/products/l/1260236-samsung-galaxy-tab-s7.webp" alt="Samsung Galaxy Tab S7" class="device-img" width="500"></td>
+          <td>Pantalla AMOLED, S Pen incluido, 128GB</td>
+          <td>Profesionales, Estudiantes</td>
+      </tr>
+      <tr>
+          <td>Microsoft Surface Pro 7</td>
+          <td><img src="https://m.media-amazon.com/images/I/61qS1eDVy9S._AC_SL1500_.jpg" alt="Microsoft Surface Pro 7" class="device-img" width="500"></td>
+          <td>Pantalla táctil, Procesador Intel i5, 8GB RAM</td>
+          <td>Profesionales, Creativos</td>
+      </tr>
+      
+        </tbody>
+    </table>
+
+
+     
     </section>
 
     <section class="impresoras" id="impresoras">
@@ -725,6 +886,75 @@
           </tr>
         </tbody>
       </table>
+
+      <h2 style="margin-top: 100px;">Videos del funcionamiento de cada tipo de impresora </h2>
+      <table class="table table-hover">
+        <thead>
+          <th class="col">Impresora</th>
+          <th class="col">Video</th>
+        </thead>
+        <tbody>
+           <tr>
+            <td>
+              <p>
+              Impresora matricial.
+              </p>
+
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Apple_ImageWriter_LQ.jpg" alt="" width="500">
+
+            </td>
+
+            <td>
+              <a class="btn btn-primary" href="https://youtu.be/9ezExsUDOp8?si=AcB01CwmqluGKFz6">Enlace del video</a>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+              <p>Impresora de inyección de tinta</p>
+
+              <img src="https://mediaserver.goepson.com/ImConvServlet/imconv/45e43d82eb377f04622c14519b828643c29ba3f2/515Wx515H?use=productpictures&hybrisId=B2C&assetDescr=L3560-690x460-1" alt="" width="500">
+            </td>
+            <td>
+              <a class="btn btn-primary" href="https://youtu.be/d6C66KYmaRQ?si=Y51bRJPCCTVJ9K80" class="text-dark"> Enlace al video</a>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+              <p>Impresora laser</p>
+              <img src="https://elsalvador.solutekla.com/photo/1/hp/impresoras_laser_multifuncionales_monocromaticas/impresora_multifuncin_hp_laserjet_pro_m428fdn/impresora_multifuncin_hp_laserjet_pro_m428fdn_0001" alt="" width="500">
+            </td>
+
+            <td>
+              <a class="btn btn-primary" href="https://youtu.be/dmLC4oOudeQ?si=zWMM8AsW_iKSoReq">Enlace al video</a>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+              <p>Impresora termica</p>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLxqFJWctffH8WHcc0LUO3bzvoxqGAMEtvZpLSNOwAqg&s" alt="" width="500">
+            </td>
+            <td>
+              <a href="https://youtu.be/RT2HPHMfWgc?si=L07nkDVT2bbXiQBp" class="btn btn-primary">Enlace al video</a>
+            </td>
+           </tr>
+
+           <tr>
+            <td>
+              <p>Impresora 3d</p>
+              <img src="https://i.blogs.es/7d772f/prusa_i3_mk2/450_1000.jpg" alt="" width="500">
+            </td>
+
+            <td>
+              <a href="https://youtu.be/kOFG67UHDtg?si=k5jxMsE0BmtNbu1a" class="btn btn-primary ">Enlace al video</a>
+            </td>
+           </tr>
+
+        </tbody>
+
+      </table>
     </section>
 
 
@@ -734,6 +964,80 @@
         <p>En grupos de 5 estudiantes deberán de seleccionar 5 Sistemas Operativos (Propietarios o Software Libre) y describir los requerimientos de instalación de hardware mínimo(Disco duro, RAM, Video, Red) en las herramientas de VirtualBox o VMware.</p>
        
         <a href="https://youtu.be/qg84lsnJ3_U">Enlace del video</a>
+
+        <h2>Más herramientas de virtualización</h2>
+
+        <table class="table table-hover ">
+          <thead>
+              <tr>
+                  <th scope="col">Herramienta</th>
+                  <th scope="col">Características</th>
+                  <th scope="col">Uso</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>VMware Workstation</td>
+                  <td> <p>Soporta múltiples sistemas operativos, snapshots, fácil de usar, integración con el host
+                  </p>
+
+                  <img src="https://blogs.vmware.com/workstation/files/2020/09/WS-Blog-Header.png" alt="" width="500">
+
+                  </td>
+                  <td>Desarrollo y pruebas de software, entornos de demostración</td>
+              </tr>
+              <tr>
+                  <td>VMware vSphere</td>
+                  <td>Virtualización a nivel empresarial, alta disponibilidad, vMotion, gestión centralizada
+
+                    <img src="https://blogs.vmware.com/vsphere/files/2023/03/2021-vSphere-Family-Icon-576x324-1.png" alt="" width="500">
+                  </td>
+                  <td>Centros de datos empresariales, virtualización de servidores</td>
+              </tr>
+              <tr>
+                  <td>Microsoft Hyper-V</td>
+                  <td>Integración con Windows Server, soporte para múltiples sistemas operativos, alta disponibilidad
+                    <img src="https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/media/hypervnesting.png" alt="" width="500">
+                  </td>
+                  <td>Virtualización de servidores en entornos Windows, centros de datos empresariales</td>
+              </tr>
+              <tr>
+                  <td>Citrix Hypervisor (anteriormente XenServer)</td>
+                  <td>Fuente abierta, virtualización de servidores, migración en vivo, integración con Citrix
+                    <img src="https://i.imgur.com/0nE2y5F.png" alt="" width="500">
+                  </td>
+                  <td>Entornos de virtualización empresarial, infraestructura de escritorios virtuales</td>
+              </tr>
+              <tr>
+                  <td>Proxmox VE</td>
+                  <td>Fuente abierta, soporte para contenedores y máquinas virtuales, gestión web, alta disponibilidad
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGYHNlDELBbMQh1amvZcvGOFYPpzcV4wq0vsIoKjMrpg&s" alt="" width="500">
+                  </td>
+                  <td>Virtualización de servidores, soluciones de código abierto</td>
+              </tr>
+              <tr>
+                  <td>KVM (Kernel-based Virtual Machine)</td>
+                  <td>Integrado en el kernel de Linux, alto rendimiento, soporte para múltiples sistemas operativos
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/QEMU_6.2_running_NetBSD_and_OpenIndiana_screenshot.png" alt="" width="500">
+                  </td>
+                  <td>Virtualización de servidores en entornos Linux, centros de datos</td>
+              </tr>
+              <tr>
+                  <td>Parallels Desktop</td>
+                  <td>Optimizado para macOS, integración con macOS, fácil de usar
+                    <img src="https://www.parallels.com/static/pl/fileadmin/res/img/pd/2023/hero-pd-standard.jpg" alt="" width="500">
+                  </td>
+                  <td>Virtualización en Mac, desarrollo y pruebas de software en Mac</td>
+              </tr>
+              <tr>
+                  <td>QEMU</td>
+                  <td>Emulación completa y virtualización, fuente abierta, soporte para múltiples arquitecturas
+                    <img src="https://www.qemu.org/screenshots/800px-Qemu_linux.png" alt="" width="500">
+                  </td>
+                  <td>Desarrollo y pruebas de software, emulación de hardware</td>
+              </tr>
+          </tbody>
+      </table>
 
     </section>
 
@@ -745,6 +1049,75 @@
        
         <a href="https://youtu.be/qg84lsnJ3_U">Enlace del video</a>
 
+        <h2>Herramientas para Soporte Técnico en Línea</h2>
+        <table class="table table-hover ">
+            <thead>
+                <tr>
+                    <th scope="col">Herramienta</th>
+                    <th scope="col">Características</th>
+                    <th scope="col">Uso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TeamViewer</td>
+                    <td>Acceso remoto, transferencias de archivos, chat, soporte para múltiples plataformas
+                      <img src="https://miro.medium.com/v2/resize:fit:640/1*jsQUE2RItjQCjslvKR4W8g.jpeg" alt="" width="500">
+                    </td>
+                    <td>Soporte remoto, colaboración en línea, reuniones virtuales</td>
+                </tr>
+                <tr>
+                    <td>LogMeIn</td>
+                    <td>Acceso remoto, gestión de usuarios, integración con aplicaciones, seguridad avanzada
+                      <img src="https://i.pcmag.com/imagery/reviews/00rpe5K7OAyIVyxBOt2OaT0-7.fit_scale.size_760x427.v1569480713.jpg" alt="" width="500">
+                    </td>
+                    <td>Soporte remoto empresarial, administración de sistemas</td>
+                </tr>
+                <tr>
+                    <td>AnyDesk</td>
+                    <td>Conexión rápida, baja latencia, transferencias de archivos, seguridad robusta
+                      <img src="https://anydesk.com/_static/img/devices/anydesk-device-windows-04fa31.jpg" alt="" width="500">
+                    </td>
+                    <td>Soporte técnico remoto, acceso a dispositivos móviles</td>
+                </tr>
+                <tr>
+                    <td>Chrome Remote Desktop</td>
+                    <td>Acceso remoto a través del navegador, fácil de usar, integración con Google Chrome
+                      <img src="https://www.itarian.com/images/google-chrome-remote-desktop.png" alt="" width="500">
+                    </td>
+                    <td>Soporte remoto sencillo, acceso personal a equipos</td>
+                </tr>
+                <tr>
+                    <td>Zoho Assist</td>
+                    <td>Acceso remoto, soporte sin supervisión, transferencia de archivos, chat en vivo
+                      <img src="https://www.zoho.com/sites/zweb/images/assist/device-window.png" alt="" width="500">
+                    </td>
+                    <td>Soporte técnico remoto, asistencia de TI</td>
+                </tr>
+                <tr>
+                    <td>Splashtop</td>
+                    <td>Alto rendimiento, acceso remoto a múltiples dispositivos, seguridad de nivel empresarial
+                      <img src="https://upload.wikimedia.org/wikipedia/en/f/f5/Splashtop_Logo.png" alt="" width="500">
+                    </td>
+                    <td>Soporte técnico remoto, acceso remoto a recursos de la empresa</td>
+                </tr>
+                <tr>
+                    <td>ConnectWise Control</td>
+                    <td>Conexión rápida, transferencias de archivos, soporte para múltiples plataformas, seguridad avanzada
+                      <img src="https://gdm-catalog-fmapi-prod.imgix.net/ProductScreenshot/a226a288-62ba-47d0-9082-880ba8254a64.png" alt="" width="500">
+                    </td>
+                    <td>Soporte remoto profesional, gestión de TI</td>
+                </tr>
+                <tr>
+                    <td>RemotePC</td>
+                    <td>Acceso remoto, fácil de usar, transferencias de archivos, chat
+                      <img src="https://blog.idrive.com/wp-content/uploads/2022/10/rdp-1-1-1.jpg" alt="" width="500">
+                    </td>
+                    <td>Soporte remoto personal y empresarial, acceso a escritorios</td>
+                </tr>
+            </tbody>
+        </table>
+
     </section>
 
 
@@ -755,6 +1128,108 @@
 
         <a href="https://youtu.be/Kzk0x_Sp1_M?si=fazYbKmiKQSHX6nm" style="color: white;">Enlace del video</a>
 
+        <h2 class="text-center">Videos de la instalación de diferentes sistemas operativos</h2>
+        <table class="table table-hover">
+          <thead>
+            <th class="col">Sistema operativo</th>
+            <th class="col">Video</th>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>Parrot Security </td>
+              <td>
+                <a class="btn btn-primary" href="https://youtu.be/qg84lsnJ3_U">Enlace al video</a>
+                <p>Autor: José Jhonis Argueta Lemus</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/ParrotOS-4.6-plasma.jpg/1200px-ParrotOS-4.6-plasma.jpg" alt="" width="500">
+              </td>
+            </tr>
+
+
+            <tr>
+              <td>Windows 8 </td>
+              <td>
+                <a class="btn btn-primary" href="https://drive.google.com/file/d/19Mj7VB1jAoJkp5-AXdAAG67a4rbhS1IX/view?usp=drivesdk">Enlace al video</a>
+                <p>Autor: Alejandro Rivas</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/8e/Windows_8_Start_Screen.png" alt="" width="500">
+              </td>
+            </tr>
+
+
+            <tr>
+              <td>Ubuntu </td>
+              <td>
+                <a class="btn btn-primary"  href="https://youtu.be/cK06G9PTkco">Enlace al video</a>
+                <p>Autor: Daniel Orellana</p>
+                <img src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1280,h_768/https://ubuntu.com/wp-content/uploads/a728/2020-04-23-13.05.21.jpg" alt="" width="500">
+              </td>
+            </tr>
+
+
+            <tr>
+              <td>Debian</td>
+              <td>
+                <a class="btn btn-primary" href="https://drive.google.com/file/d/1eNcQGy5HsTYJ39_5q7nDnsvTUN0y2frW/view?usp=drive_link">Enlace al video</a>
+                <p>Autor: Bryan Alaxander Velasquez</p>
+                <img src="https://www.debian.org/Pics/calamares-bookworm.png" alt="" width="500">
+              </td>
+            </tr>
+
+            <tr>
+              <td>OpenSuse</td>
+              <td>
+                  <a class="btn btn-primary" href="https://youtu.be/UgENUzdOC5o">Enlace al video</a>
+                  <p>Autor: Kevin Mendez</p>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" alt="" width="500">
+              </td>
+            </tr>
+
+            <tr>
+              <td>Peppermint OS</td>
+              <td>
+                <a class="btn btn-primary" href="https://youtu.be/Ve-J9fPWdtE">Enlace al video</a>
+                <p>Autor: Cristian Rosa</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/PeppermintOS.png" alt="" width="500">
+              </td>
+            </tr>
+
+            <tr>
+              <td>Mandriva</td>
+              <td>
+                <a class="btn btn-primary" href="">Enlace al video</a>
+                <p>Autora: Gabriela Vasquez</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXLUAWC9dH2AYXWpXNC0EN33JmjVOAf_PMMz9A1u3DCw&s" alt="" width="500">
+              </td>
+            </tr>
+
+            <tr>
+              <td>Windows 7</td>
+              <td>
+                <a class="btn btn-primary" href="https://youtu.be/sjFBrl_bk3Y">Enlace al video</a>
+                <p>Autor: Nestor Juarro</p>
+                <img src="https://betanews.com/wp-content/uploads/2024/01/Windows-7-2024-Edition.jpg" alt="" width="500">
+              </td>
+            </tr>
+
+            <tr>
+              <td>Fedora</td>
+              <td>
+                <a class="btn btn-primary" href="https://youtu.be/Yj9OPF98Zas">Enlace al video</a>
+                <p>Autor: Diego Cabrera</p>
+                <img src="https://www.fosslinux.com/wp-content/uploads/2020/09/1.-GNOME-running-on-Fedora.jpg" alt="" width="500">
+              </td>
+            </tr>
+
+            <tr>
+              <td>Windows XP</td>
+              <td>
+                <a class="btn btn-primary" href="https://youtu.be/vUBJwd6eVzo">Enlace al video</a>
+                <p>Autor: Santiago Quito</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/6/64/Windows_XP_Luna.png" alt="" width="500">
+              </td>
+            </tr>
+          </tbody>
+        </table>
     </section>
 
 
