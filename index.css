@@ -50,7 +50,7 @@ header:hover{
 .proyectos a{
     color: white;
     text-decoration: none;
-    animation: agranda_texto  4s ease-in-out;
+
 }
 .proyectos a:hover{
     text-decoration: underline;
@@ -102,16 +102,7 @@ header:hover{
     
 }
 
-@keyframes agranda_texto {
-    from{
-        font-size: 10px;
-    }
 
-    to{
-        font-size: 1.17em;
-    }
-    
-}
 .datos p{
     margin-top: 30px;
 }
