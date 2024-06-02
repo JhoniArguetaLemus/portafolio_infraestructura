@@ -1,11 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Seguridad y conocimientos avanzados del profesional de IT</title>
+  </head>
+
+  <style>
+
+    body{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar{
+        font-size: 1.5rem;
+    }
+    ul {
+      justify-content: space-between;
+      align-items: center;
+    }
+
+   a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+   }
+   
+
+    .navbar-collapse {
+      justify-content: space-evenly;
+      
+      padding-left: 2rem;
+      padding-right: 2rem;
+      border-radius: 15px;
+    }
+
+    nav {
+      font-size: 1.5rem;
+    }
+
+    .container{
+   
+        border-radius: 15px;
+        padding: 3rem;
+        margin-top: 3rem;
+    }
+
+    .container:hover, .certificaciones:hover{
+        border: 2px solid blue;
+    }
+
+    .certificaciones{
+        margin-top: 39px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    .examen{
+        margin-top: 40px;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#">Jhoni Argueta</a>
+          <ul class="navbar-nav d-flex">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Inicio</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#mapa">Mapas mentales</a>
+            
+            </li>
+           
+
+            <li class="nav-item">
+                <a class="nav-link active" href="#certificaciones">Certificaciones y cursos</a>
+              
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container">
+        <h3 id="mapa">Mapas mentales</h3>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-6">
+
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="imagenes/tipos_clientes.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Tipos de clientes</h5>
+                      <p class="card-text">Mapa mental en el que se exploran los diferentes tipos de clientes y como lidiar con ellos.</p>
+                      <a href="https://miro.com/app/board/uXjVKJvY4p8=/?share_link_id=190138344194" class="btn btn-primary" target="_blank">Ver mapa</a>
+                    </div>
+                  </div>
+                
+            </div>
+            <div class="col-12 col-sm-6 col-md-6">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="imagenes/amenazas_mapa.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Mapa mental de amenazas</h5>
+                      <p class="card-text">Mapa en el que conoceremos algunas amenazas, sus causas, consecuencias y medidas para evitarlas.</p>
+                      <a href="https://lucid.app/lucidchart/776c4e1c-4725-4c6f-8da5-92294b70d0eb/edit?invitationId=inv_a379e634-c2b0-447c-971c-77ac35fce619&page=0_0#" target="_blank" class="btn btn-primary">Ver mapa</a>
+                    </div>
+                  </div>
+                
+            </div>
+
+
+      
+            <div class="col-12 col-sm-6 col-md-6">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="imagenes/sistemas_moviles.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Línea del tiempo de SO móviles</h5>
+                      <p class="card-text">En esta línea del tiempo exploraremos desde los origenes de los SO móviles, su evolución hasta la actualidad.</p>
+                      <a href="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1Ii50ce65Chxn5AS5VFhLWkUxH0gW-xD-VkyOUEr2HA4&font=Default&lang=en&initial_zoom=2&height=650" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                
+            </div>
+         
+        </div>
+    </div>
     
-</body>
+
+    <section class="certificaciones" id="certificaciones">
+        <h1>Certificaciones y cursos</h1>
+        <h2>Computer hardware basics</h2>
+        <div class="examen">
+            <h3>Examen sobre computadoras personales </h3>
+            <img src="imagenes/computadoras_personales.png" alt="" width="900">
+        </div>
+
+        <div class="examen">
+            <h3>Examen sobre dispositivos móviles </h3>
+            <img src="imagenes/dispositivos_moviles.png" alt="" width="900">
+        </div>
+    
+      
+
+        <div class="examen">
+
+            <h3>Examen final </h3>
+        <img src="imagenes/examen_final.png" alt="" width="900">
+        
+        </div>
+        
+        
+
+
+
+    </section>
+   
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
